@@ -1,5 +1,5 @@
-set runtimepath=~/.vim,/usr/local/Cellar/vim/8.0.0647/share/vim/vim80,~/.vim/after
-let $VIMRUNTIME="/usr/local/Cellar/vim/8.0.0647/share/vim/vim80"
+set runtimepath=~/.vim,xxx,~/.vim/after
+let $VIMRUNTIME="xxx"
 set backspace=indent,eol,start
 set backupcopy=yes
 
