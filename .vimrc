@@ -46,7 +46,7 @@ set showcmd
 
 set si
 " 当前窗口使用的折叠方式(语法高亮项目指定折叠)
-set foldmethod=syntax
+" set foldmethod=syntax
 " 不在单词中间断行。设置了这个选项后，如果一行文字非常长，无法在一行内显示完的话，
 " 它会在单词与单词间的空白处断开，尽量不会把一个单词分成两截放在两个不同的行里。
 set lbr
@@ -64,8 +64,8 @@ source ~/.vim/php-doc.vim
 :nmap <C-D> :call PhpDocSingle()<CR>
 :vmap <C-D> :call PhpDocRange()<CR>
 set formatoptions=qroct
-autocmd BufWritePost *.php !php -d display_errors=on -l <afile>
-autocmd BufWritePost *.inc !php -d display_errors=on -l <afile>
+" autocmd BufWritePost *.php !php -d display_errors=on -l <afile>
+" autocmd BufWritePost *.inc !php -d display_errors=on -l <afile>
 
 map <F5> <Esc>:EnableFastPHPFolds<Cr>
 map <F6> <Esc>:EnablePHPFolds<Cr>
