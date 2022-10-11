@@ -17,19 +17,19 @@ vim
 
 `~/.vim/colors/`
 
-Vim将会查找~/.vim/colors/mycolors.vim并执行它。这个文件应该包括生成你的配色方案所需的一切Vim script命令。
+Vim将会查找该目录下的配色文件并执行它。这个文件应该包括生成你的配色方案所需的一切Vim script命令。
 
 `~/.vim/plugin/`
 
-~/.vim/plugin/下的文件将在每次Vim启动的时候执行。这里的文件包括那些无论何时，在启动Vim之后你就想加载的代码。
+该目录下的文件将在每次Vim启动的时候执行。这里的文件包括那些无论何时，在启动Vim之后你就想加载的代码。
 
 `~/.vim/ftdetect/`
 
-~/.vim/ftdetect/下的文件在每次你启动Vim的时候也会执行。ftdetect是"filetype detection"的缩写。这里的文件仅仅负责启动检测和设置文件的filetype类型的自动命令。
+该目录下的文件在每次你启动Vim的时候也会执行。ftdetect是"filetype detection"的缩写。这里的文件仅仅负责启动检测和设置文件的filetype类型的自动命令。
 
 `~/.vim/ftplugin/`
 
-~/.vim/ftplugin/下的文件则各不相同。一切皆取决于它的名字!当Vim把一个缓冲区的filetype设置成某个值时，它会去查找~/.vim/ftplugin/下对应的文件。比如：如果你执行set filetype=derp，Vim将查找~/.vim/ftplugin/derp.vim。一旦文件存在，Vim将执行它。
+该目录下的文件则各不相同。一切皆取决于它的名字!当Vim把一个缓冲区的filetype设置成某个值时，它会去查找~/.vim/ftplugin/下对应的文件。比如：如果你执行set filetype=derp，Vim将查找~/.vim/ftplugin/derp.vim。一旦文件存在，Vim将执行它。
 
 Vim也支持在~/.vim/ftplugin/下放置文件夹。例如set filetype=derp将告诉Vim去执行~/.vim/ftplugin/derp/下的全部*.vim文件。这使得你可以按代码逻辑分割在ftplugin下的文件。
 
@@ -37,7 +37,7 @@ Vim也支持在~/.vim/ftplugin/下放置文件夹。例如set filetype=derp将�
 
 `~/.vim/indent/`
 
-~/.vim/indent/下的文件类似于ftplugin下的文件。加载时也是只加载名字对应的文件。
+该目录下的文件类似于ftplugin下的文件。加载时也是只加载名字对应的文件。
 
 indent文件应该设置跟对应文件类型相关的缩进，而且这些设置应该是buffer-local的。
 
@@ -45,11 +45,11 @@ indent文件应该设置跟对应文件类型相关的缩进，而且这些设�
 
 `~/.vim/compiler/`
 
-~/.vim/compiler下的文件非常类似于indent文件。它们应该设置同类型名的当前缓冲区下的编译器相关选项。
+该目录下的文件非常类似于indent文件。它们应该设置同类型名的当前缓冲区下的编译器相关选项。
 
 `~/.vim/after/`
 
-~/.vim/after文件夹有点神奇。这个文件夹下的文件会在每次Vim启动的时候加载，不过是在~/.vim/plugin/下的文件加载了之后。
+该文件夹有点神奇。这个文件夹下的文件会在每次Vim启动的时候加载，不过是在~/.vim/plugin/下的文件加载了之后。
 
 这允许你覆盖Vim的默认设置。实际上你将很少需要这么做，所以不用理它，除非你有"Vim设置了选项x，但我想要不同的设置"的主意。
 
